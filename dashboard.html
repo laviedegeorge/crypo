@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="db-header w-100 text-white ">
+        <div class="db-logo-div w-100 flex justify-between pl-8">
+            <div class="left-side-logo">
+                <p class="transfer-text-header uppercase">
+                    transfer
+                </p>
+                <p class="line-span text-right"></p>
+                <p class="text-3xl font-semibold">Zero-Knowledge Assets</p>
+                <p class="text-center text-gray-500">with</p>
+               <div class="az-blocks-logo-cont flex justify-center items-center">
+                <img 
+                    src="/assets/aztec-header.png" 
+                    alt=""
+                >
+                <span class="mx-4">+</span>
+                <img 
+                    src="/assets/real-block-header.png" 
+                    alt=""
+                >
+               </div>
+            </div>
+            <div class="right-side-logo">
+                <img 
+                    src="/assets/ether-logo.png" 
+                    alt=""
+                    class="ether-head-logo"
+                >
+            </div>
+        </div>
+        <nav class="db-connection-bar flex justify-between w-100 p-1">
+            <div class="h-full flex items-end">
+                <p class=" text-gray-500 text-xs">Powered by 
+                    <span class="text-white text-base">Democracy.js</span>
+                </p>
+            </div>
+            <div class="flex p-1">
+                <span class="w-6  bg-gray-600 text-white font-bold 
+                    text-center rounded-full p-1 mx-2">
+                    i
+                </span>
+                <span class="text-white mx-1">You are connected to :</span>
+                <div class="db-name-cont flex items-center bg-gray-500 
+                    shadow px-3">
+                    <span class="connected"></span>
+                    <span class="text-white text-sm uppercase px-2">rinkeby</span>
+                    <i class="fa fa-caret-down text-white"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-container ">
+        <div class="holders your-wallet-cont flex flex-col items-center">
+            <div class="wallet-logo-cont shadow-lg">
+                <img 
+                    src="/assets/wallet.png" 
+                    alt=""
+                >
+            </div>
+            <div class="wallet-name-cont flex items-end
+                justify-center bg-white rounded shadow-lg p-1">
+                <p>Your Wallet</p>
+            </div>
+            <div class="avatar-address-cont w-full h-full  bg-white shadow-lg rounded-lg mt-3">
+                <div class="h-10"></div>
+                <div class="avatar-cont w-full flex items-center justify-between p-2">
+                    <i class="fa fa-arrow-left"></i>
+                    <img 
+                        src="/assets/db-avatar.png" 
+                        alt=""
+                        class="p-2"
+                    >
+                    <i class="fa fa-arrow-right"></i>
+                </div>
+                <p class="font-semibold text-2xl text-center
+                    color5 mt-2">Generate your avatar</p>
+                <p class="text-center text-sm mb-2">( This is how others will see you)</p>
+                <div class="h-8"></div>
+                <span class="address-label px-3 color5 font-semibold">address</span>
+                <hr class="mx-1"/>
+                <div class="address-cont flex items-center m-2">
+                    <img 
+                        src="/assets/address-logo.png" 
+                        alt=""
+                        class="address-logo w-8 rounded-full"
+                    >
+                    <p class="address text-xs text-gray-600 mx-1">
+                        0x093156d174f4F65F7B9cD82Eae4797467a6E 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="holders">
+            <div class="your-wallet-cont holders flex flex-col items-center">
+                <div class="wallet-logo-cont shadow-lg">
+                    <img 
+                        src="/assets/money-icon.png" 
+                        alt=""
+                    >
+                </div>
+                <div class="wallet-name-cont flex items-end
+                    justify-center bg-white rounded shadow-lg p-1">
+                    <p>Choose your token</p>
+                </div>
+                <div class="w-full h-full bg-white shadow-lg rounded-lg mt-3">
+                    <div class="m-2">
+                        <div class="zk-t-balance-cont rounded-t ">
+                            <div class="h-8"></div>
+                            <div class="zk-token-cont text-sm  w-full rounded-t py-1">
+                                <p>ZK token balance</p>
+                            </div>
+                            <div class="flex  justify-between 
+                                items-center shadow-xl rounded-lg p-2 my-4">
+                                <span class=" bg-red-400 text-white  
+                                    text-sm rounded-full p-2">rbt</span>
+                                <input type="text" class=" w-32 h-8 bg-gray-500 rounded-lg">
+                                <span class=" color5">1200</span>
+                            </div>
+                            <div class="flex  justify-between 
+                                items-center shadow-xl rounded-lg p-2 my-4">
+                                <span class=" bg-teal-300 text-white  
+                                    text-sm rounded-full p-2">rbt</span>
+                                <input type="text" class=" w-32 h-8 bg-gray-500 rounded-lg">
+                                <span class=" color5">450</span>
+                            </div>
+                            <div class="flex  justify-between 
+                                items-center shadow-xl rounded-lg p-2 my-4">
+                                <span class=" bg-red-400 text-white  
+                                    text-sm rounded-full p-2">rbt</span>
+                                <input type="text" class=" w-32 h-8 bg-gray-500 rounded-lg">
+                                <span class=" color5">6580</span>
+                            </div>
+                        </div>
+                        <div class="zk-t-balance-cont rounded-t ">
+                            <div class="zk-token-cont text-sm  w-full rounded-t py-1">
+                                <p>ERC20 token balance</p>
+                            </div>
+                            <div class="flex  justify-between 
+                                items-center shadow-xl rounded-lg p-2 my-4">
+                                <span class=" bg-red-400 text-white  
+                                    text-sm rounded-full p-2">rbt</span>
+                                <input type="text" class=" w-32 h-8 bg-gray-500 rounded-lg">
+                                <span class=" color5">20000</span>
+                            </div>
+                            <div class="flex  justify-between 
+                                items-center shadow-xl rounded-lg p-2 my-4">
+                                <span class=" bg-teal-300 text-white  
+                                    text-sm rounded-full p-2">rbt</span>
+                                <input type="text" class=" w-32 h-8 bg-gray-500 rounded-lg">
+                                <span class=" color5">125</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holders">
+            <div class=" h-full your-wallet-cont holders flex flex-col items-center">
+                <div class="wallet-logo-cont shadow-lg">
+                    <img 
+                        src="/assets/agenda.png" 
+                        alt=""
+                    >
+                </div>
+                <div class="wallet-name-cont flex items-end
+                    justify-center bg-white rounded shadow-lg p-1">
+                    <p>Choose who receives</p>
+                </div>
+                
+                <div class="w-full h-full bg-white shadow-lg rounded-lg mt-3">
+                    <div class="h-5"></div>
+                    <span class="address-label online-line px-3 color5 font-semibold">
+                        recently online
+                    </span>
+                    <hr class="mx-1 mb-2"/>
+                    <div class="recent-online-cont px-2">
+                        <div class="flex items-center justify-between shadow-lg rounded-lg p-2">
+                            <div class="ro-avatar-cont flex items-center">
+                                <img src="/assets/online-avatar.png" alt="">
+                                <span class="ro-online w-3 h-3 rounded-full bg-green-300"></span>
+                                <p class="mx-2">Buzzlight</p>
+                            </div>
+                            <!-- <i class="fa fa-star star text-yellow mx-1"></i> -->
+                        </div>
+                        <div class="flex items-center justify-between
+                             shadow-lg rounded-lg p-2 my-2">
+                            <div class="ro-avatar-cont flex items-center">
+                                <img src="/assets/online-avatar.png" alt="">
+                                <span class="ro-online w-3 h-3 rounded-full bg-green-300"></span>
+                                <p class="mx-2">Buzzlight</p>
+                            </div>
+                            <i class="fa fa-star star text-yellow mx-1"></i>
+                        </div>
+                        <div class="flex items-center justify-between
+                         shadow-lg rounded-lg p-2 my-2">
+                            <div class="ro-avatar-cont flex items-center">
+                                <img src="/assets/online-avatar.png" alt="">
+                                <span class="ro-online w-3 h-3 rounded-full bg-green-300"></span>
+                                <p class="mx-2">Buzzlight</p>
+                            </div>
+                            <!-- <i class="fa fa-star star text-yellow mx-1"></i> -->
+                        </div>
+                    </div>
+                    <div class="h-5"></div>
+                    <span class="address-label offline-line px-3 color5 font-semibold">
+                        recently offline
+                    </span>
+                    <hr class="mx-1 mb-2"/>
+                    <div class="recent-offline mx-2">
+                        <div class="flex items-center justify-between
+                         shadow-lg rounded-lg p-2 my-2">
+                            <div class="ro-avatar-cont flex items-center">
+                                <img src="/assets/online-avatar.png" alt="">
+                                <span class="ro-online offline w-3 h-3 rounded-full bg-green-300"></span>
+                                <p class="mx-2">Buzzlight</p>
+                            </div>
+                            <i class="fa fa-star star text-yellow mx-1"></i>
+                        </div>
+                        <div class="flex items-center justify-between
+                         shadow-lg rounded-lg p-2 my-2">
+                            <div class="ro-avatar-cont flex items-center">
+                                <img src="/assets/online-avatar.png" alt="">
+                                <span class="ro-online offline w-3 h-3 rounded-full bg-green-300"></span>
+                                <p class="mx-2">Buzzlight</p>
+                            </div>
+                            <!-- <i class="fa fa-star star text-yellow mx-1"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="holders success-declined flex
+              flex-col justify-center bg-white rounded-lg shadow-lg p-2">
+            <div>
+                <img src="/assets/success-logo.png" alt="">
+            </div>
+            <p class="text-center font-semibold my-1"> 
+                Your transaction has been successfully 
+                <span class="color6">completed!</span>
+            </p>
+            <p class="text-center text-xs text-gray-600 my-1">
+                Dear  user , for more information 
+                about this transaction , please click 
+                on the button below, it will take you 
+                to the etherscan 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

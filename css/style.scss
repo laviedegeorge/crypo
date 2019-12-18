@@ -1,3 +1,5 @@
+/* ---------------------------------GENERAL STYLES------------------------------------------ */
+
 * {
     box-sizing: border-box;
 }
@@ -25,6 +27,15 @@ body {
     color: #af1500;
     border-color: #af1500;
 }
+
+.color5{
+    color: #3C4B64;
+}
+
+.color6{
+    color: #61CC50;
+}
+/* -------------------------------------SEND CRYPTO PAGE STYLES-------------------------- */
 
 .send-crypto-container{
     min-height: calc(100vh - 116px);
@@ -75,4 +86,151 @@ footer {
 .name{
     width: 70%;
     overflow-x: hidden;
+}
+
+
+/* ---------------------------------------DASHBOARD STYLES------------------------------ */
+.db-header {
+    height: 35vh;
+        .db-logo-div{
+            background: url('/assets/header-Background.png');
+            background-size: cover;
+            height: calc(35vh - 45px);
+        }
+
+        .db-connection-bar{
+            height: 45px;
+            background-color: #1E2E4DCF;
+
+                .db-name-cont{
+                    border-radius: 20px;
+
+                        .connected{
+                            width: 13px;
+                            height: 13px;
+                            border-radius: 100%;
+                            background-color: #7EF192;
+                        }
+                }
+        }
+}
+
+.transfer-text-header{
+    color: #9CA7FF;
+    font-size: 1.5rem;
+}
+
+.line-span{
+    width: 70px;
+    height: 1px;
+    text-align: right;
+    background-color: #FF7D00;
+}
+
+.az-blocks-logo-cont{
+    margin-top: -10px;
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+}
+.ether-head-logo{
+    width: 150px;
+}
+
+.main-container{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+    padding: 10px 0px;
+
+        .holders{
+            height: 590px;
+        }
+        
+        .success-declined{
+            height: 550px;
+            position: relative;
+            top: 40px;
+        }
+}
+
+.your-wallet-cont{
+
+    .wallet-logo-cont{
+        width: 40px;
+        height: 40px !important;
+        position: relative;
+        top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3C4B64;
+        border-radius: 100%;
+        padding: .5rem;
+    }
+
+    .wallet-name-cont{
+        width: 100%;
+        height: 50px;
+
+            p{
+                color: #3C4B64;
+            }
+    }
+}
+
+.avatar-cont{
+    height: 220px;
+}
+
+.address-label{
+    position: relative;
+    left: 10px;
+    border-bottom: 2px solid #8FFBFB;
+}
+.address-logo{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-color: #E0EBFF;
+}
+
+.address{
+    width: 100%;
+    overflow: hidden;
+}
+
+.zk-token-cont{
+    background-color: #E7ECFC;
+        p{
+            color: #757F8C;
+            text-indent: 10px;
+        }
+}
+
+.ro-online{
+    position: relative;
+    bottom: 10px;
+    right: 7px;
+}
+
+.star{
+    color: gold;
+}
+
+/* ------------ */
+.online-line{
+    border-bottom: 2px solid #FF7D00;
+}
+
+.offline-line{
+    border-bottom: 2px solid #828282;
+}
+
+.offline{
+    background-color: #828282;
 }
